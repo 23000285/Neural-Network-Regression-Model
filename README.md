@@ -4,9 +4,56 @@
 
 To develop a neural network regression model for the given dataset.
 
+Got it 👍
+For your **`## THEORY:`** section, you need to explain the problem statement and the theory behind developing a neural network regression model.
+Here’s a well-structured explanation you can directly use:
+
+---
+
 ## THEORY:
 
-Explain the problem statement.
+The given problem is a **regression problem**, where the objective is to predict a continuous target variable (weight) based on an input feature (height). Unlike classification, which predicts discrete categories, regression aims to find a relationship between input variables and continuous output values.
+
+A **neural network regression model** is an artificial neural network that maps input data to continuous output. It consists of:
+
+* **Input layer:** Receives the feature(s) (in this case, height).
+* **Hidden layers:** Contain neurons that perform transformations using weighted connections, activation functions (like ReLU), and bias terms to learn complex, non-linear relationships.
+* **Output layer:** Produces a continuous value (predicted weight).
+
+### Key Concepts:
+
+1. **Data Preprocessing:**
+
+   * The dataset is split into **training** and **testing** sets to train and evaluate the model.
+   * **MinMaxScaler** is applied to scale features between 0 and 1, ensuring stable training and faster convergence.
+
+2. **Neural Network Model:**
+
+   * Multiple fully connected (dense) layers are used.
+   * **ReLU (Rectified Linear Unit)** activation introduces non-linearity, enabling the model to learn complex patterns.
+   * The final layer has a single neuron (since the output is one continuous value).
+
+3. **Loss Function:**
+
+   * **Mean Squared Error (MSE)** is used as the loss function to measure the difference between actual and predicted weights.
+   * Lower MSE indicates better performance.
+
+4. **Optimizer:**
+
+   * **RMSProp** optimizer is applied to update weights and minimize loss during backpropagation.
+
+5. **Training Process:**
+
+   * Forward pass computes predictions.
+   * Backward pass updates weights based on the gradient of the loss function.
+   * Training continues for multiple epochs until the model converges.
+
+6. **Model Evaluation:**
+
+   * The model’s performance is tested on unseen data (test set).
+   * A **loss vs. epoch plot** shows how the model improves over time.
+   * The trained model can also predict new, unseen inputs.
+
 
 ## Neural Network Model:
 
