@@ -4,12 +4,6 @@
 
 To develop a neural network regression model for the given dataset.
 
-Got it 👍
-For your **`## THEORY:`** section, you need to explain the problem statement and the theory behind developing a neural network regression model.
-Here’s a well-structured explanation you can directly use:
-
----
-
 ## THEORY:
 
 The given problem is a **regression problem**, where the objective is to predict a continuous target variable (weight) based on an input feature (height). Unlike classification, which predicts discrete categories, regression aims to find a relationship between input variables and continuous output values.
